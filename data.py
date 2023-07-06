@@ -2,7 +2,6 @@ from faker import Faker
 fake = Faker()
 
 # Функция для генерации случайного электронного адреса имени
-
 class TestData:
     def email():
         name = fake.first_name()
@@ -25,6 +24,14 @@ class TestData:
         password_length = fake.random_int(min=4, max=max_length)
         password = fake.password(length=password_length)
         return password
+
+
+class TestUrls:
+    main_url = 'https://stellarburgers.nomoreparties.site/'
+    register_url = 'https://stellarburgers.nomoreparties.site/register'
+    login_url = 'https://stellarburgers.nomoreparties.site/login'
+    forgot_password_url = 'https://stellarburgers.nomoreparties.site/forgot-password'
+
 
 #email = email()
 #correct_password_six_symbols = generate_correct_password_six_symbols()
