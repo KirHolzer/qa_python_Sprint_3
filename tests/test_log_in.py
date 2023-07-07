@@ -28,7 +28,7 @@ class TestLogin:
         browser.get(TestUrls.main_url)
         browser.find_element(*TestLocators.ACCOUNT_BUTTON).click()
         browser.find_element(*TestLocators.LINK_TO_REGISTRATION_PAGE_FRON_ACCOUNT).click()
-        browser.find_element(*TestLocators.LOGIN_BUTTON_REGISTER).click()
+        browser.find_element(*TestLocators.LOGIN_BUTTON_REGISTRATION).click()
         browser.find_element(*TestLocators.EMAIL_INPUT_LOGIN).send_keys(TestData.valid_email_for_login)
         browser.find_element(*TestLocators.PASSWORD_INPUT_LOGIN).send_keys(TestData.valid_password_for_login)
         browser.find_element(*TestLocators.LOGIN_BUTTON_LOGIN).click()

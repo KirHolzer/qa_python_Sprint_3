@@ -8,7 +8,7 @@ class TestConstructorNavigation:
 
     def test_const_go_to_toppings(self, browser):
         browser.get(TestUrls.main_url)
-        browser.find_element(*TestLocators.TOPPINGS_BUTTON).click()
+        browser.find_element(*TestLocators.FILLER_BUTTON).click()
         WebDriverWait(browser, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TOPPINGS_BANNER))
         current_navigation_text = browser.find_element(*TestLocators.CURRENT_TAB).text
@@ -24,7 +24,7 @@ class TestConstructorNavigation:
 
     def test_const_go_to_buns(self, browser):
         browser.get(TestUrls.main_url)
-        browser.find_element(*TestLocators.TOPPINGS_BUTTON).click()
+        browser.find_element(*TestLocators.FILLER_BUTTON).click()
         browser.find_element(*TestLocators.BUNS_BUTTON).click()
         WebDriverWait(browser, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.BUNS_BANNER))
