@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 
 
-@pytest.fixture
+@pytest.fixture(scope='function')
 def browser():
     options = ChromeOptions()
     options.add_argument("--window-size=1200,900")
