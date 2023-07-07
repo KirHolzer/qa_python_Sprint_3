@@ -3,8 +3,6 @@
 Этот проект выполнен в рамках курса QA-инженер от Яндекс.Практикум. В рамках проекта мы используем Selenium для автоматизации тестирования веб-приложения Stellar Burgers.
 
 
-![Stellar Burgers](https://stellarburgers.nomoreparties.site/static/media/logo.73589b01.svg)
-
 Stellar Burgers - это космический фастфуд: можно собрать и заказать бургер из необычных ингредиентов.
 
 ## Описание
