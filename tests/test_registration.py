@@ -38,7 +38,3 @@ class TestRegistration:
         expected_text = "Некорректный пароль"
         assert browser.find_element(*TestLocators.PASSWORD_INPUT_ERROR_REGISTRATION).text == expected_text
 
-
-
-
-

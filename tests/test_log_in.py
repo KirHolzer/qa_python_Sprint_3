@@ -46,10 +46,3 @@ class TestLogin:
             expected_conditions.visibility_of_element_located(TestLocators.MAKE_ORDER_BUTTON))
         assert browser.current_url == TestUrls.main_url
 
-
-
-
-
-
-
-
