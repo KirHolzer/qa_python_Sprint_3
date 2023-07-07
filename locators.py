@@ -33,4 +33,6 @@ class TestLocators:
 
     LOGOUT_BUTTON = By.XPATH, ".//button[text()='Выход']"
 
+    LINK_TO_REGISTRATION_PAGE_FRON_ACCOUNT = By.XPATH, ".//a[@class = 'Auth_link__1fOlj']"
+
 print(TestLocators.EMAIL_INPUT_REGISTER)

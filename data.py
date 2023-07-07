@@ -25,6 +25,9 @@ class TestData:
         password = fake.password(length=password_length)
         return password
 
+    valid_email_for_login = 'kirill.holzer@yandex.ru'
+    valid_password_for_login = 'qwerty'
+
 
 class TestUrls:
     main_url = 'https://stellarburgers.nomoreparties.site/'
