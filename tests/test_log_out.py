@@ -1,6 +1,6 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from locators import TestLocators
+from locators import AuthLocators
 from helpers import login
 
 class TestLogOut:
@@ -9,14 +9,14 @@ class TestLogOut:
         """
             Проверяет выход из аккаунта из личного кабинета.
         """
-        browser.find_element(*TestLocators.LOGIN_ACCOUNT_BUTTON).click()
+        browser.find_element(*AuthLocators.LOGIN_ACCOUNT_BUTTON).click()
         login(browser)
         WebDriverWait(browser, 3).until(
-            expected_conditions.visibility_of_element_located(TestLocators.MAKE_ORDER_BUTTON))
-        browser.find_element(*TestLocators.ACCOUNT_BUTTON).click()
+            expected_conditions.visibility_of_element_located(AuthLocators.MAKE_ORDER_BUTTON))
+        browser.find_element(*AuthLocators.ACCOUNT_BUTTON).click()
         WebDriverWait(browser, 3).until(
-            expected_conditions.element_to_be_clickable(TestLocators.LOGOUT_BUTTON)).click()
+            expected_conditions.element_to_be_clickable(AuthLocators.LOGOUT_BUTTON)).click()
         WebDriverWait(browser, 3).until(
-            expected_conditions.visibility_of_element_located(TestLocators.LOGIN_BUTTON_LOGIN))
-        assert browser.find_element(*TestLocators.HEADING_ON_LOG_IN_PAGE).text == "Вход"
+            expected_conditions.visibility_of_element_located(AuthLocators.LOGIN_BUTTON_LOGIN))
+        assert browser.find_element(*AuthLocators.HEADING_ON_LOG_IN_PAGE).text == "Вход"
 
