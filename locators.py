@@ -36,6 +36,6 @@ class TestLocators:
     SAUCES_BANNER = By.XPATH, ".//h2[text()='Соусы']"                # Локатор соусов в скролле h2 конструктора
     TOPPINGS_BANNER = By.XPATH, ".//h2[text()='Начинки']"            # Локатор начинки в скролле h2 конструктора
 
-    CURRENT_TAB = By.XPATH, ".//div[@class = 'tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']" # Локатор выброанной навигации конструктора
+    CURRENT_TAB = By.XPATH, ".//div[contains(@class, 'tab_tab_type_current')]" # Локатор выброанной навигации конструктора
     MAKE_BURGER_BANNER = By.XPATH, ".//h1[text()='Соберите бургер']"    # Локатор 'Соберите бургер' на главной странице
     MAKE_ORDER_BUTTON = By.XPATH, ".//button[text()='Оформить заказ']"  # Локатор кнопки 'Оформить заказ' на главной странице
