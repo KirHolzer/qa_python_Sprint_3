@@ -40,14 +40,3 @@ class TestConstructorNavigationText:
     sauces_navigation_text = 'Соусы'
     filler_navigation_text = 'Начинки'
 
-
-#email = email()
-#correct_password_six_symbols = generate_correct_password_six_symbols()
-#correct_password_more_then_six_symbols = generate_correct_password_more_then_six_symbols()
-#uncorrect_password_less_then_six_symbols = generate_uncorrect_password_less_then_six_symbols()
-
-#print(TestData.email())
-#print(TestData.generate_correct_password_six_symbols())
-#print(TestData.generate_correct_password_more_then_six_symbols())
-#print(TestData.generate_uncorrect_password_less_then_six_symbols())
-
