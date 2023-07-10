@@ -18,6 +18,7 @@ class TestLocators:
     LOGIN_BUTTON_LOGIN = By.XPATH, ".//button[text()='Войти']"
     LOGIN_BANNER = By.XPATH, ".//h2[text()='Вход']"
     LOGIN_BUTTON_RECOVERY = By.XPATH, ".//a[text()='Войти']"
+    HEADING_ON_LOG_IN_PAGE = By.XPATH, ".//h2[text() ='Вход']"
 
     # Локатор для проверки деавторизации
     LOGOUT_BUTTON = By.XPATH, ".//button[text()='Выход']"
