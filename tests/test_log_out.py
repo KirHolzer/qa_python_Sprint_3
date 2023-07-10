@@ -7,7 +7,6 @@ from data import TestData
 class TestLogOut:
 
     def test_logout_from_account_page(self, browser):
-        browser.get(TestUrls.main_url)
         browser.find_element(*TestLocators.ACCOUNT_BUTTON).click()
         browser.find_element(*TestLocators.EMAIL_INPUT_LOGIN).send_keys(TestData.valid_email_for_login)
         browser.find_element(*TestLocators.PASSWORD_INPUT_LOGIN).send_keys(TestData.valid_password_for_login)

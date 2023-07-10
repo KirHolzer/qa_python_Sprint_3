@@ -7,7 +7,6 @@ from data import TestConstructorNavigationText
 class TestConstructorNavigation:
 
     def test_const_go_to_toppings(self, browser):
-        browser.get(TestUrls.main_url)
         browser.find_element(*TestLocators.FILLER_BUTTON).click()
         WebDriverWait(browser, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TOPPINGS_BANNER))
@@ -15,7 +14,6 @@ class TestConstructorNavigation:
         assert TestConstructorNavigationText.filler_navigation_text == current_navigation_text
 
     def test_const_go_to_sauces(self, browser):
-        browser.get(TestUrls.main_url)
         browser.find_element(*TestLocators.SAUCES_BUTTON).click()
         WebDriverWait(browser, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.SAUCES_BANNER))
@@ -23,7 +21,6 @@ class TestConstructorNavigation:
         assert TestConstructorNavigationText.sauces_navigation_text == current_navigation_text
 
     def test_const_go_to_buns(self, browser):
-        browser.get(TestUrls.main_url)
         browser.find_element(*TestLocators.FILLER_BUTTON).click()
         browser.find_element(*TestLocators.BUNS_BUTTON).click()
         WebDriverWait(browser, 3).until(
