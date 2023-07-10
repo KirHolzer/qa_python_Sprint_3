@@ -6,7 +6,9 @@ from helpers import login
 class TestLogOut:
 
     def test_logout_from_account_page(self, browser):
-
+        """
+            Проверяет выход из аккаунта из личного кабинета.
+        """
         browser.find_element(*TestLocators.LOGIN_ACCOUNT_BUTTON).click()
         login(browser)
         WebDriverWait(browser, 3).until(
