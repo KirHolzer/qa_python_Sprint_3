@@ -2,9 +2,11 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 from helpers import login
+
 class TestLogOut:
 
     def test_logout_from_account_page(self, browser):
+
         browser.find_element(*TestLocators.LOGIN_ACCOUNT_BUTTON).click()
         login(browser)
         WebDriverWait(browser, 3).until(
